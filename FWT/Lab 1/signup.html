@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>This is a title</title>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+
+
+    <body style="margin: 0px; padding: 0px; background: #F5F2D0; color: #704214;">
+
+
+        <div class="header" style="font-family: 'Crimson Text', serif">
+
+            <h1 style="padding: 5px; margin: 0px; text-align: center; padding-top: 20px;">Sherlock Holmes</h1>
+            <h3 style="margin: 0px; text-align: center; padding-bottom: 20px;">Sign up to the 221B newsletter.</h3>
+            <ul id="navbarlist">
+                <li  class="tooltip">
+                    <a href="home.html">Back to Wiki</a>
+                    <div class="tooltiptext">Go back to the Sherlock Holmes Wiki.</div>
+                </li>
+                <li class="tooltip">
+                    <a href="https://en.wikipedia.org/wiki/Sherlock_Holmes">The Wikipedia entry.</a>
+                    <div class="tooltiptext">See the Wikipedia entry.</div>    
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="Body" style="font-family: 'Crimson Text', serif;">
+                <table align="center" style="width: 700px;">
+                    <form name="signup_form" id="signup_form" action="post">
+                    <tr>
+                        <th><h4 style="text-align: left;">Fill out your details below and we will keep in touch.</h4></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fullname"><strong>What's your name?</strong></label><br>
+                            <input type="text" name="fullname" style="height: 30px; background: #F5F2D0; border: 1px #704214 dashed; font-family: 'Montserrat', sans-serif; font-weight: 900; color: #704214; padding: 10px;"/>
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email"><strong>What's your email address? (100 characters max)</strong></label><br>
+                            <input type="email" name="fullname" style="height: 30px; width: 300px; background: #F5F2D0; border: 1px #704214 dashed; font-family: 'Montserrat', sans-serif; font-weight: 900; color: #704214; padding: 10px;"/>
+                            <br><br>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label><strong>Which collection of Sherlock Holmes books have you read?</strong></label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cb1">
+                            <input type="checkbox" id = "cb1" name="cb1" style="vertical-align: middle;"/>The Adventures of Sherlock Holmes
+                            </label>
+                        </td>
+                        <td>
+                            <label for="cb2">
+                            <input type="checkbox" id = "cb2" name="cb1" style="vertical-align: middle;"/>The Hound of the Baskervilles
+                            </label>
+                            <br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><strong>For how long would you like to subscribe?</strong></label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rb1">
+                            <input type="radio" id = "rb1" name="rb1" style="vertical-align: middle;"/>Three months
+                            </label>
+                        </td>
+                        <td>
+                            <label for="cb2"><input type="radio" id = "rb2" name="rb1" style="vertical-align: middle;"/>Six months</label>
+                            <br><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label><strong>Would you like to contribute to the Wiki later?</strong></label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="wiki-select" style="margin: 10px; height: 30px; background=#F5F2D0; padding: 0px; font-family: 'Montserrat', sans-serif;">
+                                <option value="contributor">Yes, I want to contribute.</option>
+                                <option value="reader">No, I'm just here to read.</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Sign up."></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

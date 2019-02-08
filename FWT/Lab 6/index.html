@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lab 6 - An Intro to JQuery.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_bar">
+            <h3 class="nav_bar_title">Lab 6 - An Intro to JQuery.</h3>
+            <button type="button" value="Get in Touch" class="action_button">See source on GitHub.</button>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>
+            JQuery makes dynamic websites, <strong>dynamic</strong>.
+        </h1>
+        <p>
+            It abstracts away the pain of cross-browser compatibility, making DOM manipulations easy.
+        </p>
+        <div id="dollar_styled">
+            <p id="style">
+                <strong>$(</strong>dynamic<strong>)</strong>
+            </p>
+        </div>
+        <div class="element_inspection">
+            <table>
+                <tr>
+                    <th><p>Hover on any element on this page, and see some basic information about it below.</p></th>
+                </tr>
+                <tr>
+                    <td class="labels">
+                        Element Type:
+                    </td>
+                    <td id="element_type" class="propvalues">Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <td class="labels">Element ID:</td>
+                    <td id="element_id" class="propvalues">Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <td class="labels">Element Class:</td>
+                    <td id="element_class" class="propvalues">Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <td class="labels">Element Color:</td>
+                    <td id="element_color" class="propvalues">
+                        <div id="color_prop_box"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labels">Element Background:</td>
+                    <td id="element_background" class="propvalues">
+                        <div id="background_prop_box"></div>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
